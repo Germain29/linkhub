@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cœur Vert avec Rond Doré Animé</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .heart {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            animation: pulse 1s infinite alternate;
+        }
+        .heart::before,
+        .heart::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            width: 50px;
+            height: 80px;
+            background: green;
+            border-radius: 50px 50px 0 0;
+        }
+        .heart::before {
+            left: 50px;
+            transform: rotate(-45deg);
+            transform-origin: 0 100%;
+        }
+        .heart::after {
+            left: 0;
+            transform: rotate(45deg);
+            transform-origin: 100% 100%;
+        }
+        .circle {
+            position: absolute;
+            top: 40px;
+            left: 25px;
+            width: 50px;
+            height: 50px;
+            background: gold;
+            border-radius: 50%;
+            animation: bounce 1s infinite alternate;
+        }
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+            100% {
+                transform: scale(1.1);
+            }
+        }
+        @keyframes bounce {
+            0% {
+                transform: translateY(0);
+            }
+            100% {
+                transform: translateY(-10px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="heart">
+        <div class="circle"></div>
+    </div>
+</body>
+</html>

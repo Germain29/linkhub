@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkHub</title>
+  <link rel="stylesheet" type="text/css" href="css/pré.css">
+   <link rel="icon" href="images/li.png" type="images/png">  
+</head>
+<body>
+  <header>
+    <img src="images/li.png" alt="Logo" class="logoo">
+     </header>
+  <!-- Écran de bienvenue -->
+  <section class="intro">
+    <div >
+     <div class="logo"> <h1>Bienvenue sur LinkHub !</h1>  </div>
+      <h2>Nous vous emmenons dans un univers de liens utiles.</h2>
+     <a href="acueil.html" class="tag"> Continuer </a>
+    </div>
+    </section>
+    <div id="cookie-banner" style="position: fixed; bottom: 0; width: 100%; background-color: #111; color: white; padding: 10px; text-align: center; font-size: 1rem;">
+  <p>Ce site utilise des cookies pour améliorer votre expérience de navigation. En poursuivant votre navigation, vous acceptez notre <a href="#politique-cookies" style="color: #005ca9;">politique de cookies</a>.</p>
+  <button onclick="acceptCookies()" style="background-color: #005ca9; color: white; padding: 10px 20px; border: none; cursor: pointer;">Accepter</button>
+</div>
+
+<script>
+  function acceptCookies() {
+    document.getElementById("cookie-banner").style.display = "none";
+    localStorage.setItem("cookies-accepted", "true");
+  }
+
+  if (localStorage.getItem("cookies-accepted") === "true") {
+    document.getElementById("cookie-banner").style.display = "none";
+  }
+</script>
+
+</body>
+</html>
