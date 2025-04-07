@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LinkHub</title>
+  <link rel="stylesheet" type="text/css" href="css/acueil.css">
+   <link rel="icon" href="images/li.png" type="images/png">
+</head>
+<body>
+  <header>
+    <img src="images/li.png" alt="Logo" class="logoo">
+      <a href="confi.html#contact"><button class="back-button"><strong><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#005ca9" viewBox="0 0 24 24">
+  <path d="M20,4H4C2.9,4,2.01,4.9,2.01,6L2,18c0,1.1,0.89,2,1.99,2H20c1.1,0,2-0.9,2-2V6C22,4.9,21.1,4,20,4z M20,8l-8,5L4,8V6
+    l8,5l8-5V8z"/>
+</svg>
+</strong></button></a>
+    <div class="logo">LINKHUB</div>
+    <div class="title">DÉCOUVREZ DES LIENS UTILES</div>
+  </header>
+
+  <section class="intro">
+    <p><strong>LINKHUB</strong> est votre portail personnel pour <strong>trouver et explorer les meilleurs liens du web</strong>.<br>
+    Que ce soit pour les animes, les séries, les films, les scans, ou les musiques : tout est là.<br>
+    Revenez souvent, de nouveaux liens s’ajoutent régulièrement pour enrichir votre univers numérique.</p>
+  </section>
+
+  <section class="tags">
+    <a href="manga.html" class="tag"> ANIMES / SCANS </a>
+    <a href="films.html" class="tag"> FILMS / SÉRIES </a>
+    <a href="gain.html" class="tag"> GAIN EN LIGNE </a>
+    <a href="téléchargement.html" class="tag"> TÉLÉCHARGEMENT </a>
+    <a href="music.html" class="tag"> MUSIQUE </a>
+    <a href="achats.html" class="tag"> ACHATS D'OUTILS </a>
+    <a href="reso.html" class="tag"> RESEAUX SOCIAUX </a>
+  </section>
+<div id="cookie-banner" style="position: fixed; bottom: 0; width: 100%; background-color: #111; color: white; padding: 10px; text-align: center; font-size: 1rem;">
+  <p>Ce site utilise des cookies pour améliorer votre expérience de navigation. En poursuivant votre navigation, vous acceptez notre <a href="#politique-cookies" style="color: #005ca9;">politique de cookies</a>.</p>
+  <button onclick="acceptCookies()" style="background-color: #005ca9; color: white; padding: 10px 20px; border: none; cursor: pointer;">Accepter</button>
+</div>
+
+<script>
+  function acceptCookies() {
+    document.getElementById("cookie-banner").style.display = "none";
+    localStorage.setItem("cookies-accepted", "true");
+  }
+
+  if (localStorage.getItem("cookies-accepted") === "true") {
+    document.getElementById("cookie-banner").style.display = "none";
+  }
+</script>
+
+    <br><br><br><br><br>
+
+<footer>
+  <div class="search-bar">
+  <a href="confi.html#mentions-legales">Mentions légales</a>
+  <a href="confi.html#politique-confidentialite">Politique de confidentialité</a>
+  <a href="confi.html#politique-cookies">Politique de cookies</a>
+  <a href="confi.html#conditions-utilisation">Conditions d'utilisation</a>
+</div>
+  <h3>&copy; 2025 LINKHUB - Tous droits réservés. Design & création par <a href="mailto:germaindjeff@gmail.com" target="_blank">Germain Djeff</a></h3>
+</footer>
+</body>
+</html>
