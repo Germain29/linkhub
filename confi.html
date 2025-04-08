@@ -40,9 +40,9 @@
 <section id="contact">
   <h2>Contact</h2>
   <p>Une question, une remarque ou juste un coucou ? Écris-nous !</p>
-  <form method="POST" action="mailto:germaindjeff@gmail.com" enctype="text/plain">
-    <input type="text" name="nom" placeholder="Votre nom" required>
-    <input type="email" name="email" placeholder="Votre email" required>
+  <form name="contact" method="POST" data-netlify="true" action="confi.html">
+    <input type="text" name="nom" placeholder="Votre nom" required autocomplete="name">
+    <input type="email" name="email" placeholder="Votre email" required autocomplete="email">
     <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
     <button type="submit">Envoyer</button>
   </form>
