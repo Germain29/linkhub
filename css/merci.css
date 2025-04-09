@@ -95,3 +95,17 @@
     a {
       color: var(--disboard-blue);
     }
+ 
+    .link-button {
+      background-color: #111;
+      border: 2px solid var(--disboard-blue);
+      border-radius: 20px;
+      padding: 2rem;
+      font-size: 1.1rem;
+      font-weight: bold;
+      color: var(--disboard-blue);
+      text-align: center;
+      box-shadow: 0 0 10px rgba(0, 92, 169, 0.5);
+      cursor: pointer;
+      transition: transform 0.2s, background-color 0.3s;
+    }
