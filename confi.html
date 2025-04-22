@@ -40,12 +40,14 @@
 <section id="contact">
   <h2>Contact</h2>
   <p>Une question, une remarque ou juste un coucou ? Écris-nous !</p>
-  <form name="contact" method="POST" data-netlify="true" action="merci.html">
+ <form name="contact" method="POST" data-netlify="true">
     <input type="text" name="nom" placeholder="Votre nom" required autocomplete="name">
     <input type="email" name="email" placeholder="Votre email" required autocomplete="email">
     <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+    <input type="hidden" name="redirect" value="/merci.html">
+    
     <button type="submit">Envoyer</button>
-  </form>
+</form>
 </section>
 
 <footer>
