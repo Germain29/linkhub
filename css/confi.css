@@ -1,0 +1,97 @@
+  :root {
+      --disboard-blue: #005ca9;
+    }
+
+    body {
+      background-image: url('../images/goog.gif');
+      background-size: cover;
+      background-position: center;
+      font-family: 'DM Serif Display', cursive;
+      background-color: #000000;
+      color: white;
+      background-attachment: fixed;
+      margin: 0;
+      padding: 0;
+    }
+
+.back-button {
+      position: fixed;
+      top: 2rem;
+      left: 2rem;
+      background-color: transparent;
+      border: none;
+      font-size: 2rem;
+      color: var(--disboard-blue);
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .back-button:hover {
+      transform: translateX(-5px);
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem 1rem 1rem;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--disboard-blue);
+      text-shadow: 0 0 10px var(--disboard-blue);
+    }
+
+    section {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: #111;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0, 92, 169, 0.4);
+    }
+
+    h1, h2 {
+      color: var(--disboard-blue);
+      text-shadow: 0 0 10px var(--disboard-blue);
+    }
+
+    form input, form textarea {
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 1rem;
+      border: 1px solid var(--disboard-blue);
+      background-color: #111;
+      color: white;
+      font-family: 'DM Serif Display', cursive;
+      border-radius: 10px;
+    }
+
+    form button {
+      padding: 0.8rem 1.5rem;
+      font-size: 1.1rem;
+      font-weight: bold;
+      background-color: var(--disboard-blue);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 1rem;
+      transition: background 0.3s;
+    }
+
+    form button:hover {
+      background-color: #0078d7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #000;
+      color: #aaa;
+      margin-top: 3rem;
+      font-style: italic;
+    }
+
+    a {
+      color: var(--disboard-blue);
+    }

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Linkhub-Mentions légales & Politique</title>
+  <link rel="stylesheet" type="text/css" href="css/confi.css">
+   <link rel="icon" href="images/li.png" type="image/png">
+</head>
+<body>
+
+<header>
+   <button class="back-button" onclick="window.history.back();">←</button>
+  <h1>Mentions Légales & Politique de Confidentialité</h1>
+</header>
+
+<section id="mentions-legales"> 
+  <h2>Mentions légales</h2>
+  <p><strong>Éditeur du site :</strong>Germain Djeff</p>
+  <p><strong>Contact :</strong><a href="mailto:germaindjeff@gmail.com" target="_blank"> germaindjeff@gmail.com</a></p>
+  <p><strong>Directeur de la publication :</strong>Djeff</p>
+  <p><strong>Hébergement :</strong>Netlify <a href="https://app.netlify.com/" target="_blank"><div class="link-button">https://app.netlify.com/</div></a></p>
+</section>
+
+<section id="politique-confidentialite">
+  <h2>Politique de confidentialité</h2>
+  <p>Nous ne collectons pas de données personnelles sans votre consentement. Les informations transmises via le formulaire de contact sont utilisées uniquement pour répondre à votre message. Elles ne sont ni revendues, ni partagées. Vous pouvez demander à consulter, modifier ou supprimer vos données.</p>
+</section>
+
+<section id="politique-cookies">
+  <h2>Politique de cookies</h2>
+  <p>Ce site utilise des cookies pour améliorer votre expérience utilisateur. En continuant votre navigation, vous acceptez l’utilisation de ces cookies. Vous pouvez les désactiver via les paramètres de votre navigateur.</p>
+</section>
+
+<section id="conditions-utilisation">
+  <h2>Conditions d'utilisation</h2>
+  <p>Ce site permet de partager des liens menant vers des sites externes. Nous ne sommes pas responsables du contenu de ces sites. L’utilisateur s’engage à respecter la législation en vigueur. Tout abus pourra entraîner un bannissement ou des poursuites.</p>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <p>Une question, une remarque ou juste un coucou ? Écris-nous !</p>
+ <form name="contact" method="POST" data-netlify="true">
+    <input type="text" name="nom" placeholder="Votre nom" required autocomplete="name">
+    <input type="email" name="email" placeholder="Votre email" required autocomplete="email">
+    <textarea name="message" placeholder="Votre message" rows="5" required></textarea>
+    <input type="hidden" name="redirect" value="/merci.html">
+    
+    <button type="submit">Envoyer</button>
+</form>
+</section>
+
+<footer>
+  <p>&copy; 2025 LINKHUB - Tous droits réservés. Design & création par <a href="mailto:germaindjeff@gmail.com" target="_blank">Germain Djeff</a></p>
+</footer>
+
+</body>
+</html>

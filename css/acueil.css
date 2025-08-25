@@ -1,0 +1,134 @@
+ @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
+
+    :root {
+      --disboard-blue: #005ca9; /* Bleu foncé inspiré du logo de Microsoft Edge */
+    }
+
+     body {
+      background-image: url('../images/goog.gif');
+      background-size: cover;
+      background-position: center;
+      font-family: 'DM Serif Display', cursive;
+      background-color: #000000;
+      color: white;
+      background-attachment: fixed;
+    }
+    header {
+      text-align: center;
+      padding: 3rem 1rem 1rem 1rem;
+    }
+    .logo {
+      font-size: 3.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+      background: linear-gradient(to right, var(--disboard-blue), #0078d7);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: inline-block;
+      letter-spacing: 3px;
+      text-shadow: 0 0 15px var(--disboard-blue);
+    }
+    .title {
+      font-size: 2.5rem;
+      font-weight: 800;
+      color: var(--disboard-blue);
+      text-shadow: 0 0 10px var(--disboard-blue);
+    }
+    .search-bar {
+      margin: 2rem auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: 'DM Serif Display', cursive;
+    }
+
+.back-button {
+      position: fixed;
+      top: 2rem;
+      right: 2rem;
+      background-color: transparent;
+      font-size: 2rem;
+      color: var(--disboard-blue);
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .back-button:hover {
+      transform: translateX(5px);
+    }
+
+    .logoo {
+      position: fixed;
+      top: 2rem;
+      left: 2rem;
+      background-color: transparent;
+      font-size: 2rem;
+      color: var(--disboard-blue);
+      cursor: pointer;
+      transition: transform 0.2s;
+      font-weight: 70px;
+      width: 70px;
+      border-radius: 100px;
+    }
+    .logoo {
+      transform: translateX(-5px);
+    }
+
+    .search-bar a {
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      font-weight: bold;
+      text-decoration: none;
+      background-color: #111;
+      border: 2px solid var(--disboard-blue);
+      border-radius: 0;
+      color: var(--disboard-blue);
+      transition: background-color 0.3s, transform 0.3s;
+      margin: 0 1rem;
+      text-align: center;
+      box-shadow: none; /* Supprimer l'ombre portée pour un effet plus plat */
+      text-transform: uppercase;
+    }
+    .intro {
+      text-align: center;
+      margin: 1rem auto;
+      max-width: 700px;
+      font-size: 1.1rem;
+    }
+    .tags {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 1.2rem;
+      justify-content: center;
+      margin: 2rem auto;
+      max-width: 1000px;
+      padding: 0 1rem;
+    }
+    .tag {
+      background-color: #111;
+      border: 2px solid var(--disboard-blue);
+      border-radius: 20px;
+      padding: 1rem;
+      font-weight: bold;
+      font-size: 1rem;
+      text-align: center;
+      cursor: pointer;
+      transition: background 0.3s, transform 0.2s;
+      color: var(--disboard-blue);
+      box-shadow: 0 0 10px rgba(0, 92, 169, 0.4);
+      font-family: 'DM Serif Display', cursive;
+    }
+    .tag:hover {
+      background-color: #222;
+      transform: scale(1.05);
+    }
+    a {
+      color: var(--disboard-blue);
+    }
+     footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #000;
+      color: #aaa;
+      margin-top: 3rem;
+      font-style: italic;
+    }
